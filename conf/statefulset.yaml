@@ -1,0 +1,13 @@
+server:
+  addr: ":9988"
+  read_timeout:        30s
+  read_header_timeout: 10s
+  write_timeout:       30s
+  idel_timeout:        30s
+  max_header_bytes:    4194304 # 4MB
+  exit_timeout: 1m
+
+log:
+  level: 5              # 2 for error, 3 for waring, 4 for info, 5 for debug, default is 5
+  dir: D:\\statefulset\\logs          # dir: /var/server/log/
+  name: statefulset
